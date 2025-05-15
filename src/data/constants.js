@@ -146,8 +146,8 @@ export const projects = [
       "A sleek and responsive personal portfolio built using React.js and Tailwind CSS, showcasing a developer’s profile in an elegant and modern layout. The application features dedicated sections for About, Experience, Projects, Skills, and Education, offering a clear and engaging overview of professional background and capabilities. Integrated with EmailJS for seamless contact form functionality, enhanced with dynamic typing effects using Typewriter, and real-time feedback with Toastify notifications, this portfolio ensures both interactivity and a polished user experience. Designed to leave a strong impression on visitors, clients, and recruiters alike.",
     image: PrjPortfolio,
     tags: ["React Js", "Tailwind CSS", "JavaScript", "Email Js"],
-    github: "https://github.com/Shakilgaha/React-Expense_Tracker.git",
-    webapp: "https://shakilgaha-expense-tracker.netlify.app",
+    github: "https://github.com/Shakilgaha/React-Portfolio.git",
+    webapp: "https://shakilgaha-portfolio.netlify.app/",
   },
   {
     id: 1,
