@@ -4,19 +4,13 @@ import Tilt from 'react-parallax-tilt'
 import profileImg from '/ShakilGaha.png'
 import { Typewriter } from 'react-simple-typewriter'
 
-import { motion } from "framer-motion"
-import { fadeIn } from '../utils/motion'
 
 const About = () => {
   return (
     <section id='about' className='container text-white py-12 pt-40 flex justify-baseline flex-col gap-12 md:flex-row' >
 
       {/* Left Div */}
-      <motion.div
-        variants={fadeIn("right", 0.3)}
-        initial="hidden"
-        whileInView="show"
-        className='order-2 md:order-1  flex flex-col font-bold gap-2 w-full items-center justify-center md:items-start text-center md:text-start  '>
+      <div className='order-2 md:order-1  flex flex-col font-bold gap-2 w-full items-center justify-center md:items-start text-center md:text-start  '>
         {/* first Line */}
         <h1 className=' text-4xl  '  >Hi, I am  </h1>
         {/* Name  */}
@@ -64,14 +58,10 @@ const About = () => {
           DOWNLOAD CV
         </a>
 
-      </motion.div>
+      </div>
 
       {/* Right Div  */}
-      <motion.div
-        variants={fadeIn("left", 0.4)}
-        initial="hidden"
-        whileInView="show"
-        className='order-1 md:order-2  w-full md:w-1/2 flex items-center justify-center  h-full'>
+      <div className='order-1 md:order-2  w-full md:w-1/2 flex items-center justify-center  h-full'>
         <Tilt
           tiltMaxAngleX={20}
           tiltMaxAngleY={20}
@@ -85,7 +75,7 @@ const About = () => {
             className='cursor-pointer w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]  scale-110 '
           />
         </Tilt>
-      </motion.div>
+      </div>
     </section>
   )
 }

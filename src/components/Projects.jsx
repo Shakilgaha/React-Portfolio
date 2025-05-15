@@ -1,9 +1,6 @@
 import React, { useState } from 'react'
 import { projects } from '../data/constants.js'
 
-import { motion } from "framer-motion"
-import { fadeIn } from '../utils/motion.js'
-
 
 const Projects = () => {
 
@@ -24,15 +21,11 @@ const Projects = () => {
             <div className=' m-auto px-20 '>
 
                 {/* Heading Section */}
-                <motion.div
-                    variants={fadeIn("up", 0.2)}
-                    initial="hidden"
-                    whileInView="show"
-                    className='flex flex-col justify-center items-center text-center mb-16 '>
+                <div className='flex flex-col justify-center items-center text-center mb-16 '>
                     <h1 className='text-4xl font-extrabold  '>PROJECTS</h1>
                     <span className='bg-[#8245ec] py-0.5 px-18 mt-2 mb-5 rounded-2xl    '></span>
                     <p className='text-lg md:text-xl font-semibold md:font-bold text-gray-400' >A showcase of the projects I have worked on, highlighting my skills and experience in various technologies</p>
-                </motion.div>
+                </div>
 
                 {/* Projects Section */}
                 <div className='my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9  mx-6  ' >

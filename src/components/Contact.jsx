@@ -3,11 +3,6 @@ import React, { useRef, useState } from 'react'
 import emailjs from "@emailjs/browser"
 import { Bounce, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-import { motion } from "framer-motion"
-import { fadeIn } from '../utils/motion';
-
-
 const Contact = () => {
 
 
@@ -65,15 +60,11 @@ const Contact = () => {
       <div className='container '>
 
         {/* Heading Section */}
-        <motion.div
-          variants={fadeIn("up", 0.2)}
-          initial="hidden"
-          whileInView="show"
-          className='flex flex-col justify-center items-center text-center mb-16 '>
+        <div className='flex flex-col justify-center items-center text-center mb-16 '>
           <h1 className='text-4xl font-extrabold  '> CONTACT </h1>
           <span className='bg-[#8245ec] py-0.5 px-18 mt-2 mb-5 rounded-2xl    '></span>
           <p className='text-xl font-bold text-gray-400' >I’d love to hear from you—reach out for any opportunities or questions!</p>
-        </motion.div>
+        </div>
 
 
         {/* Contact Form */}
