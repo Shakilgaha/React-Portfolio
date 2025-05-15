@@ -1,6 +1,9 @@
 import React from 'react'
 import { education } from '../data/constants'
 
+import { motion } from "framer-motion"
+import { fadeIn } from '../utils/motion'
+
 const Education = () => {
     return (
         <section
@@ -11,11 +14,15 @@ const Education = () => {
             <div className='container-2 '>
 
                 {/* Heading Section */}
-                <div className='flex flex-col justify-center items-center text-center mb-16 px-6 '>
+                <motion.div
+                    variants={fadeIn("up", 0.2)}
+                    initial="hidden"
+                    whileInView="show"
+                    className='flex flex-col justify-center items-center text-center mb-16 px-6 '>
                     <h1 className='text-4xl font-extrabold  '> EDUCATION </h1>
                     <span className='bg-[#8245ec] py-0.5 px-24 mt-2 mb-5 rounded-2xl    '></span>
                     <p className='text-lg md:text-xl font-semibold md:font-bold text-gray-400' >My education has been a journey of learning and development. Here are the details of my academic background</p>
-                </div>
+                </motion.div>
 
 
                 {/* Education Timeline  */}
@@ -63,7 +70,7 @@ const Education = () => {
                                         <div className='flex flex-col my-4 space-y-3 text-gray-400 '>
                                             <p className='font-bold ' > Grade: {curElem.grade} </p>
                                             <p className='text-sm font-light ' > {curElem.desc} </p>
-                                            
+
                                         </div>
                                     </div>
 

@@ -1,22 +1,28 @@
 import React from 'react'
 import { experiences } from '../data/constants.js';
 
+import { motion } from "framer-motion"
+import { fadeIn } from '../utils/motion.js';
+
 
 const Experience = () => {
     return (
         <section
             id="experience"
             className='my-12 py-24  bg-skills-gradient pb-45 clip-path-custom2 '
-        
+
         >
             <div className='container-2 '>
-
                 {/* Heading Section */}
-                <div className='flex flex-col justify-center items-center text-center mb-16 px-6 '>
+                <motion.div
+                    variants={fadeIn("up", 0.2)}
+                    initial="hidden"
+                    whileInView="show"
+                    className='flex flex-col justify-center items-center text-center mb-16 px-6 '>
                     <h1 className='text-4xl font-extrabold  '>EXPERIENCES</h1>
                     <span className='bg-[#8245ec] py-0.5 px-24 mt-2 mb-5 rounded-2xl    '></span>
                     <p className='text-lg md:text-xl font-semibold md:font-bold text-gray-400' >A collection of my work experience and the roles I have taken in various organizations</p>
-                </div>
+                </motion.div>
 
 
                 {/* Experience Timeline  */}
@@ -66,7 +72,7 @@ const Experience = () => {
                                             <span>Skills :</span>
                                             <ul className=' flex flex-wrap gap-2 '>
                                                 {
-                                                    curElem.skills.map((curSkill , index) => {
+                                                    curElem.skills.map((curSkill, index) => {
                                                         return (
                                                             <li key={index} className='bg-[#8245ec] px-4 py-1 rounded-md w-fit h-fit text-xs text-gray-200 font-light shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]'>{curSkill}</li>
                                                         )
