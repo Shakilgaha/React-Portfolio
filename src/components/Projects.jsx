@@ -21,7 +21,7 @@ const Projects = () => {
             className="py-24 pb-24   font-sans relative  container "
 
         >
-            <div className=' m-auto px-20 '>
+            <div className=' m-auto px-2 md:px-20 '>
 
                 {/* Heading Section */}
                 <motion.div
@@ -35,7 +35,7 @@ const Projects = () => {
                 </motion.div>
 
                 {/* Projects Section */}
-                <div className='my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9  mx-6  ' >
+                <div className='my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9  md:mx-6  ' >
                     {
                         projects.map((curElem, index) => {
                             return (
