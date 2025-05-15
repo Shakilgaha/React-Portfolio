@@ -18,10 +18,10 @@ const Projects = () => {
     return (
         <section
             id="project"
-            className="py-24 pb-24   font-sans relative  container "
+            className="py-24 pb-24 font-sans relative  container "
 
         >
-            <div className=' m-auto px-2 md:px-20 '>
+            <div className=' m-auto px-1 md:px-20 '>
 
                 {/* Heading Section */}
                 <motion.div
@@ -81,7 +81,7 @@ const Projects = () => {
             {/*Model Container   */}
             {
                 selectedProject && (
-                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4 py-12 ">
+                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90  py-12 ">
                         <div className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-2xl  overflow-hidden relative px-3 pb-4 my-24  ">
                             {/* close model btn */}
                             <div className='flex justify-end px-1 pt-2'>
@@ -119,12 +119,12 @@ const Projects = () => {
                                 <a href={selectedProject.github}
                                     target='_blank'
                                     rel='noopener noreferrer'
-                                    className='rounded-md shadow-2xl w-full px-8 py-2 inline-block mt-5 text-lg font-bold transition duration-300 text-center hover:scale-105 hover:bg-linear-to-r hover:from-[#8245ec] hover:to-[#a885f7]  btn-project-hover  border border-zinc-700 hover:border-0 '
+                                    className='rounded-md shadow-2xl w-full px-2 md:px-8 py-2 inline-block mt-5 text-xs md:text-lg font-bold transition duration-300 text-center hover:scale-105 hover:bg-linear-to-r hover:from-[#8245ec] hover:to-[#a885f7]  btn-project-hover  border border-zinc-700 hover:border-0 '
                                 > View Code </a>
                                 <a href={selectedProject.webapp}
                                     target='_blank'
                                     rel='noopener noreferrer'
-                                    className={`rounded-md shadow-2xl w-full px-8 py-2 inline-block mt-5 text-lg font-bold transition duration-300 text-center bg-linear-to-r from-[#8245ec] to-[#a885f7]  ${selectedProject.webapp === null ? " opacity-20 cursor-not-allowed " : "btn-project-hover  hover:scale-105"}   `}
+                                    className={`rounded-md shadow-2xl w-full px-2 md:px-8 py-2 inline-block mt-5 text-xs md:text-lg font-bold transition duration-300 text-center bg-linear-to-r from-[#8245ec] to-[#a885f7]  ${selectedProject.webapp === null ? " opacity-20 cursor-not-allowed " : "btn-project-hover  hover:scale-105"}   `}
                                 > View Live </a>
 
                             </div>
