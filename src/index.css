@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    @apply max-w-[90rem] m-auto px-4 md:px-12
+}
+.container-2 {
+    @apply max-w-[110rem] m-auto px-4 md:px-12
+}
+
+
+
+/* Skills Section BG-Color */
+.bg-skills-gradient {
+    background-image: linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
+
+}
+
+/* Project Section Btn */
+.btn-project-hover:hover {
+    box-shadow: 0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 10px #8245ec;
+    
+}
+
+
+/* contact Input  */
+
+.contact-input {
+    @apply px-4 py-3 rounded-md border border-gray-600 outline-none bg-[#0d081f] focus:border focus:border-purple-500
+}
+
+
+
+/* custom Clip Paths */
+.clip-path-custom {
+    clip-path: polygon(0 0, 100% 0, 100% 98%, 75% 95%, 0 100%)
+}
+
+.clip-path-custom2 {
+    clip-path: polygon(0 0, 100% 0, 100% 98%, 25% 95%, 0 100%)
+}
+
+.clip-path-custom3 {
+    clip-path: polygon(0 0, 100% 0, 100% 98%, 75% 96%, 0 100%)
+}
+
+
+
+
+
+/*---------------------------------
+/* for Scroll BarDesign    
+----------------------------------*/
+
+
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Scrollbar Track (Background) */
+::-webkit-scrollbar-track {
+    /*@applydark:bg-zinc-900 bg-white ;
+    */background: #18181b ;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
+/* Scrollbar Handle (Thumb) */
+::-webkit-scrollbar-thumb {
+    background: #5a05ed;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
