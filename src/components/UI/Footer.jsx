@@ -31,7 +31,7 @@ const Footer = () => {
         <h1 className='text-xl text-purple-500 font-semibold'>Shakil Gaha</h1>
       </div>
       {/* Links */}
-      <div className='flex flex-wrap gap-3 md:gap-7 justify-center items-center text-center bg-yellow-200'>
+      <div className='flex flex-wrap gap-3 md:gap-7 justify-center items-center text-center '>
         {
           links.map((curLink, index) => {
             return (
