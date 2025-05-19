@@ -48,7 +48,7 @@ const Skills = () => {
                     scale={1.05}
                     transitionSpeed={1000}
                     gyroscope={true}
-                    className='  '
+                    className='hidden md:block '
                   >
                     <ul className='grid grid-cols-2 md:grid-cols-3  gap-3 '>
                       {
@@ -67,6 +67,22 @@ const Skills = () => {
                       }
                     </ul>
                   </Tilt>
+                  <ul className='md:hidden grid grid-cols-2 md:grid-cols-3  gap-3 '>
+                    {
+                      curSkill.skills.map((curElem) => {
+                        return (
+                          <motion.li
+                            variants={fadeIn("down", 0.4)}
+                            initial="hidden"
+                            whileInView="show"
+                            key={curElem.name} className='border border-gray-700 rounded-full px-4 py-2 flex w-full gap-2 items-center justify-center  ' >
+                            <img src={curElem.logo} alt={`${curElem.logo} Logo`} className='w-8 h-8' />
+                            <span className='text-xs sm:text-sm' > {curElem.name} </span>
+                          </motion.li>
+                        )
+                      })
+                    }
+                  </ul>
                 </motion.div>
               )
             })

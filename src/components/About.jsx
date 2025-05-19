@@ -73,19 +73,26 @@ const About = () => {
         initial="hidden"
         whileInView="show"
         className='order-1 md:order-2  w-full md:w-1/2 flex items-center justify-center  h-full'>
-        <Tilt
-          tiltMaxAngleX={20}
-          tiltMaxAngleY={20}
-          perspective={1000}
-          scale={1.05}
-          transitionSpeed={1000}
-          gyroscope={true}
-          className='w-[20rem] h-[20rem] sm:w-[25rem] sm:h-[25rem] lg:w-[30rem] lg:h-[30rem] border-4 border-purple-700 rounded-full  overflow-hidden   '
-        >
+        <div className='hidden md:block '>
+          <Tilt
+            tiltMaxAngleX={20}
+            tiltMaxAngleY={20}
+            perspective={1000}
+            scale={1.05}
+            transitionSpeed={1000}
+            gyroscope={true}
+            className='sm:w-[25rem] sm:h-[25rem] lg:w-[30rem] lg:h-[30rem] border-4 border-purple-700 rounded-full  overflow-hidden   '
+          >
+            <img src={profileImg} alt="Shakil Gaha"
+              className='cursor-pointer w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]  scale-110 '
+            />
+          </Tilt>
+        </div>
+        <div className='w-[20rem] h-[20rem] md:hidden  border-4 border-purple-700 rounded-full  overflow-hidden  '>
           <img src={profileImg} alt="Shakil Gaha"
             className='cursor-pointer w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]  scale-110 '
           />
-        </Tilt>
+        </div>
       </motion.div>
     </section>
   )
