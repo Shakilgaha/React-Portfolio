@@ -26,7 +26,7 @@ import csharpLogo from "../assets/tech_logo/csharp.png";
 
 //!Experience Section Logo's
 import techGrowLogo from "../assets/company_logo/TechGrow_logo.jpg";
-import duoFusionLogo from "../assets/company_logo/duoFusionLogo2.png";
+import HKDigiVerseLogo from "../assets/company_logo/HKDigiVerseLogo.png";
 
 //! Education Section Logo's
 import OmSLogo from "../assets/education_logo/Om-Sankul-Kumbhariya.jpg";
@@ -101,11 +101,11 @@ export const experiences = [
   },
   {
     id: 1,
-    img: duoFusionLogo,
+    img: HKDigiVerseLogo,
     role: "Frontend Intern",
-    company: "DuoFusion",
+    company: "HK DigiVerse & IT Consultancy",
     date: "01 Feb 2025 - 30 Apr 2025",
-    desc: "Completed a 3-month onsite internship at DuoFusion, contributing to the HRMS Live Project. Gained hands-on experience with TypeScript, Ant Design, and improved skills in React, Redux, and Tailwind CSS while designing and enhancing scalable, user-friendly UI components.",
+    desc: "Completed a 3-month onsite internship at HK DigiVerse & IT Consultancy, contributing to the HRMS Live Project. Gained hands-on experience with TypeScript, Ant Design, and improved skills in React, Redux, and Tailwind CSS while designing and enhancing scalable, user-friendly UI components.",
     skills: ["TypeScript", "ReactJs", "Redux","RTK Query" , "Tailwind-CSS", "Ant-Design"],
   },
 ];
