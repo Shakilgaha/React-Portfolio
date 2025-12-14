@@ -36,6 +36,7 @@ import JNMLogo from "../assets/education_logo/Govt_School_Logo.png";
 
 //! Project Section Logo's
 import PrjPortfolio from "../assets/work_logo/Prj_PortfolioImg.png";
+import PrjBharatExamFest from "../assets/work_logo/Prj_BEF.png"; 
 import PrjHRMS from "../assets/work_logo/Prj_HRMS_Panel.png";
 import PrjExpense from "../assets/work_logo/Prj_ExpenseTrackerImg.png";
 import PrjWorldAtlas from "../assets/work_logo/Prj_WorldAtlasImg.png";
@@ -58,7 +59,6 @@ export const SkillsInfo = [
       { name: "Axios", logo: "" },
       { name: "TanStack Query", logo: "" },
       { name: "RTK Query", logo: "" },
-
     ],
   },
   {
@@ -102,8 +102,8 @@ export const experiences = [
     role: "Frontend Intern",
     company: "Tech Grow",
     date: "25 Dec 2024 - 25 Jan 2025",
-    desc: "completed 30 days of a virtual internship program in React js Development with wonderful remarks at Tech Grow from 25/12/2024 to 25/01/2025.  designing and implementing scalable UI components and responsive websites using ReactJs , Tailwind Css  ",
-    skills: ["HTML", "ReactJs", "Tailwind-Css", "React-Router-Dom"],
+    desc: "Completed a Frontend Development internship focused on React.js at Tech Grow. Worked on designing and implementing scalable, reusable UI components and building fully responsive web interfaces. Integrated public APIs using Axios and followed modern frontend best practices with React, Tailwind CSS, and React Router to deliver clean and maintainable code.",
+    skills: ["HTML", "React.js", "Tailwind CSS", "React Router DOM", "Axios"],
   },
   {
     id: 1,
@@ -111,7 +111,7 @@ export const experiences = [
     role: "Full Stack Develpoer",
     company: "HK DigiVerse & IT Consultancy",
     date: "07 Aug 2025 - Present ",
-    desc: "Working as a Full Stack Developer at HK DigiVerse & IT Consultancy, guiding development workflows and mentoring interns. I have contributed to multiple live projects, including HRMS, Bharat Exam Fest, HK DigiSkill, and AI-Setu (ERP). I specialize in building scalable, user-friendly applications and have strengthened my expertise across the full stack—designing intuitive UI components, optimizing performance, and developing secure, reliable backend APIs.",
+    desc: "Working as a Full Stack Developer at HK DigiVerse & IT Consultancy, leading development workflows and mentoring interns. Actively contributed to multiple live production projects including HRMS, Bharat Exam Fest, HK DigiSkill, and AI-Setu (ERP). Specialized in building scalable, high-performance web applications by developing intuitive user interfaces, optimizing frontend performance, and implementing secure, reliable backend APIs using modern full-stack technologies.",
     skills: [
       "React.js",
       "React Router",
@@ -170,9 +170,29 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: "Bharat Exam Fest (LIVE Project)",
+    description:
+      "Bharat Exam Fest is a live UPSC-focused educational platform built with React.js and TypeScript, designed to sell premium courses and host competitive contests. The application allows users to explore and purchase courses, participate in skill-based contests, and win real cash rewards through secure Razorpay payment integration. It features real-time data handling with RTK Query, role-based workflows, and a responsive, modern UI built using Tailwind CSS, Ant Design, and Material UI for a seamless learning and competition experience.",
+    image: PrjBharatExamFest,
+    tags: [
+      "React Js",
+      "TypeScript",
+      "Redux Toolkit",
+      "RTK Query",
+      "Tailwind CSS",
+      "Ant Design",
+      "Material UI",
+      "Razorpay",
+    ],
+    github: null,
+    webapp: "https://www.bharatexamfest.com/",
+  },
+
+  {
+    id: 1,
     title: "HRMS Panel (LIVE Project)",
     description:
-      "A Human Resource Management System (HRMS) panel built with React.js, TypeScript, Tailwind CSS, and Ant Design, providing modules for employee management, attendance, leave tracking, and role-based access. Powered by RTK Query for efficient API handling and React Router DOM for smooth navigation, this project delivers a professional, scalable, and user-friendly dashboard for managing HR operations effectively.",
+      "A live, enterprise-level Human Resource Management System built with React.js and TypeScript to manage employees, attendance, and leave operations. The application features role-based access control, real-time data handling using RTK Query, and a responsive, professional dashboard designed with Tailwind CSS and Ant Design for scalable and efficient HR workflows.",
     image: PrjHRMS,
     tags: [
       "React Js",
@@ -186,7 +206,7 @@ export const projects = [
     webapp: "https://hrms.hkdigiverse.com/",
   },
   {
-    id: 1,
+    id: 2,
     title: "Casual Vibe",
     description:
       "CasualVibe is a full-stack e-commerce site built with the MERN stack and styled using Tailwind CSS. It features product listings, cart, orders, and admin controls (ADMIN PANEL). Key features include SwiperJS sliders, Framer Motion animations, and TanStack Query for efficient data fetching. The backend uses Zod for validation, Multer for file uploads, Bcrypt for password hashing, and JWT for secure authentication.",
@@ -203,7 +223,7 @@ export const projects = [
     webapp: null,
   },
   {
-    id: 2,
+    id: 3,
     title: "Shakil-Gaha-Portfolio",
     description:
       "A sleek and responsive personal portfolio built using React.js and Tailwind CSS, showcasing a developer’s profile in an elegant and modern layout. The application features dedicated sections for About, Experience, Projects, Skills, and Education, offering a clear and engaging overview of professional background and capabilities. Integrated with EmailJS for seamless contact form functionality, enhanced with dynamic typing effects using Typewriter, and real-time feedback with Toastify notifications, this portfolio ensures both interactivity and a polished user experience. Designed to leave a strong impression on visitors, clients, and recruiters alike.",
@@ -213,7 +233,7 @@ export const projects = [
     webapp: "https://shakilgaha-portfolio.netlify.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Expense-Tracker",
     description:
       "An interactive and visually engaging Expense Tracker application built with React.js and Tailwind CSS, designed to help users manage their finances effortlessly. It features dynamic data visualization through Recharts, providing clear insights into income and expenses. Smooth navigation is handled with React Router DOM, while Framer Motion adds fluid animations for a modern UI feel. Real-time feedback and alerts are powered by React Hot Toast, enhancing user interaction. With intuitive controls and a clean layout, this tool offers a seamless experience for anyone looking to track and analyze their spending habits effectively.",
@@ -229,7 +249,7 @@ export const projects = [
     webapp: "https://shakilgaha-expense-tracker.netlify.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "World-Atlas",
     description:
       "A modern and informative World Atlas web application developed using React.js and Tailwind CSS, designed to explore countries and their detailed information in an interactive format. The app fetches real-time data for all countries via Axios and displays key details such as name, capital, population, region, and flags. Users can click on any country to navigate to a dedicated page showcasing comprehensive data about the selected nation, thanks to seamless routing handled by React Router DOM. With a clean UI and responsive design, the World Atlas offers an intuitive way to learn about countries across the globe.",
@@ -239,14 +259,14 @@ export const projects = [
     webapp: "https://shakilgaha-world-atlas.netlify.app/",
   },
 
-  {
-    id: 5,
-    title: "Animated-Landing-Page",
-    description:
-      "A visually striking animated landing page built with React.js and Tailwind CSS, designed to showcase modern UI design skills. Features include smooth Framer Motion animations and responsive SwiperJS sliders for an engaging, scroll-friendly experience. Built purely for design and aesthetic presentation.",
-    image: PrjAnimatedWeb,
-    tags: ["React JS", "Tailwind CSS", "Framer-Motion", "Swiper Js"],
-    github: "https://github.com/Shakilgaha/React-Animated-Landing-Page.git",
-    webapp: "https://shakilgaha-animated-landing-page.netlify.app/",
-  },
+  // {
+  //   id: 6,
+  //   title: "Animated-Landing-Page",
+  //   description:
+  //     "A visually striking animated landing page built with React.js and Tailwind CSS, designed to showcase modern UI design skills. Features include smooth Framer Motion animations and responsive SwiperJS sliders for an engaging, scroll-friendly experience. Built purely for design and aesthetic presentation.",
+  //   image: PrjAnimatedWeb,
+  //   tags: ["React JS", "Tailwind CSS", "Framer-Motion", "Swiper Js"],
+  //   github: "https://github.com/Shakilgaha/React-Animated-Landing-Page.git",
+  //   webapp: "https://shakilgaha-animated-landing-page.netlify.app/",
+  // },
 ];
