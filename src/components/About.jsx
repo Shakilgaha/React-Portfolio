@@ -6,6 +6,7 @@ import { Typewriter } from 'react-simple-typewriter'
 
 import { motion } from "framer-motion"
 import { fadeIn } from '../utils/motion'
+import { ResumeLink } from '../data/Links'
 
 
 const About = () => {
@@ -52,7 +53,7 @@ const About = () => {
 
         {/* Download Btn */}
 
-        <a href="/ShakilGaha_Resume.pdf"
+        <a href={ResumeLink}
           target='_blank'
           rel="noopener noreferrer"
           className='rounded-full shadow-2xl w-fit px-8 py-2 inline-block mt-5 text-lg font-bold transition duration-300 hover:scale-105    '
