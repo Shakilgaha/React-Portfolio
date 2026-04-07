@@ -47,8 +47,13 @@ const About = () => {
           </span>
 
         </h3>
-        <p className='text-gray-400 w-full font-normal lg:max-w-1/2 text-sm px-6 md:px-0   '>
-          I'm a passionate and dedicated full-stack developer with a strong foundation in web development, recently completed my Bachelor of Computer Applications (BCA). I specialize in the MERN stack (MongoDB, Express.js, React, and Node.js) and have completed a virtual internship focused on React.js, where I built responsive and dynamic user interfaces. While I may not have professional experience yet, I have developed several hands-on projects that demonstrate my ability to build functional, user-friendly web applications. I’m eager to grow as a developer and contribute to real-world projects that make an impact.
+        {/* <p className='text-gray-400 w-full font-normal lg:max-w-1/2 text-sm px-6 md:px-0   '>
+          I'm a results-driven Full Stack MERN Developer with hands-on experience building scalable web applications and enterprise-level solutions. I specialize in MongoDB, Express.js, React, and Node.js, with strong expertise in creating dynamic user interfaces and efficient backend systems.
+        </p> */}
+        <p className='text-gray-400 w-full font-normal lg:max-w-1/2 text-sm px-6 md:px-0'>
+          I'm a results-driven Full Stack MERN Developer skilled in building scalable web applications and enterprise-level solutions using MongoDB, Express.js, React, and Node.js. I design and develop robust RESTful APIs, implement secure role-based authentication, and build dynamic, responsive dashboards.
+
+          I solve real-world business problems through systems like ERP, HRMS, and learning platforms, focusing on performance optimization, efficient data handling with TanStack Query, and writing clean, maintainable, and scalable code.
         </p>
 
         {/* Download Btn */}
