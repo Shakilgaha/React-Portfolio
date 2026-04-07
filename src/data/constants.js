@@ -24,6 +24,11 @@ import vercelLogo from "../assets/tech_logo/vercel.png";
 import antDesignLogo from "../assets/tech_logo/antDesign.svg";
 import materialUILogo from "../assets/tech_logo/materialui.png";
 import csharpLogo from "../assets/tech_logo/csharp.png";
+import postgresqlLogo from "../assets/tech_logo/postgre.png";
+import socketIoLogo from "../assets/tech_logo/Socket-io.svg";
+import tanStackLogo from "../assets/tech_logo/TanStack.svg";
+import hostingerLogo from "../assets/tech_logo/Hostinger.png";
+import AxiosLogo from "../assets/tech_logo/axios.webp";
 
 //!Experience Section Logo's
 import techGrowLogo from "../assets/company_logo/TechGrow_logo.jpg";
@@ -36,12 +41,14 @@ import JNMLogo from "../assets/education_logo/Govt_School_Logo.png";
 
 //! Project Section Logo's
 import PrjPortfolio from "../assets/work_logo/Prj_PortfolioImg.png";
-import PrjBharatExamFest from "../assets/work_logo/Prj_BEF.png"; 
+import PrjBharatExamFest from "../assets/work_logo/Prj_BEF.png";
 import PrjHRMS from "../assets/work_logo/Prj_HRMS_Panel.png";
 import PrjExpense from "../assets/work_logo/Prj_ExpenseTrackerImg.png";
 import PrjWorldAtlas from "../assets/work_logo/Prj_WorldAtlasImg.png";
 import PrjCasualVibe from "../assets/work_logo/Prj_CasualVibeImg.png";
-import PrjAnimatedWeb from "../assets/work_logo/Prj_AnimatedWebImg.png";
+import PrjAiSetu from "../assets/work_logo/AI-setu.png";
+import PrjHkDigiSkill from "../assets/work_logo/HK-DigiSkill.png";
+// import PrjAnimatedWeb from "../assets/work_logo/Prj_AnimatedWebImg.png";
 
 export const SkillsInfo = [
   {
@@ -49,16 +56,16 @@ export const SkillsInfo = [
     skills: [
       { name: "HTML", logo: htmlLogo },
       { name: "CSS", logo: cssLogo },
-      { name: "JavaScript", logo: javascriptLogo },
+      // { name: "JavaScript", logo: javascriptLogo },
       { name: "React JS", logo: reactjsLogo },
       { name: "Redux Tool Kit", logo: reduxLogo },
       { name: "Material UI", logo: materialUILogo },
       { name: "Ant Design", logo: antDesignLogo },
       { name: "Tailwind CSS", logo: tailwindcssLogo },
       { name: "Bootstrap", logo: bootstrapLogo },
-      { name: "Axios", logo: "" },
-      { name: "TanStack Query", logo: "" },
-      { name: "RTK Query", logo: "" },
+      { name: "Axios", logo: AxiosLogo },
+      { name: "TanStack Query", logo: tanStackLogo },
+      { name: "RTK Query", logo: reduxLogo },
     ],
   },
   {
@@ -67,7 +74,9 @@ export const SkillsInfo = [
       { name: "Node JS", logo: nodejsLogo },
       { name: "Express JS", logo: expressjsLogo },
       { name: "MySQL", logo: mysqlLogo },
+      { name: "PostgreSQL", logo: postgresqlLogo },
       { name: "MongoDB", logo: mongodbLogo },
+
     ],
   },
   {
@@ -89,8 +98,10 @@ export const SkillsInfo = [
       { name: "VS Code", logo: vscodeLogo },
       { name: "Postman", logo: postmanLogo },
       { name: "Compass", logo: mcLogo },
+      { name: "Hostinger", logo: hostingerLogo },
       { name: "Vercel", logo: vercelLogo },
       { name: "Netlify", logo: netlifyLogo },
+      { name: "Socket Io", logo: socketIoLogo },
     ],
   },
 ];
@@ -101,7 +112,7 @@ export const experiences = [
     img: techGrowLogo,
     role: "Frontend Intern",
     company: "Tech Grow",
-    date: "25 Dec 2024 - 25 Jan 2025",
+    date: "Dec 2024 - Jan 2025",
     desc: "Completed a Frontend Development internship focused on React.js at Tech Grow. Worked on designing and implementing scalable, reusable UI components and building fully responsive web interfaces. Integrated public APIs using Axios and followed modern frontend best practices with React, Tailwind CSS, and React Router to deliver clean and maintainable code.",
     skills: ["HTML", "React.js", "Tailwind CSS", "React Router DOM", "Axios"],
   },
@@ -110,7 +121,7 @@ export const experiences = [
     img: HKDigiVerseLogo,
     role: "Full Stack Develpoer",
     company: "HK DigiVerse & IT Consultancy",
-    date: "07 Aug 2025 - Present ",
+    date: "Feb 2025 - Present ",
     desc: "Working as a Full Stack Developer at HK DigiVerse & IT Consultancy, leading development workflows and mentoring interns. Actively contributed to multiple live production projects including HRMS, Bharat Exam Fest, HK DigiSkill, and AI-Setu (ERP). Specialized in building scalable, high-performance web applications by developing intuitive user interfaces, optimizing frontend performance, and implementing secure, reliable backend APIs using modern full-stack technologies.",
     skills: [
       "React.js",
@@ -170,6 +181,23 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: "AI-Setu ERP System (LIVE Project)",
+    description:
+      "AI-Setu is a full-stack ERP system developed using the MERN stack, designed to streamline core business operations such as inventory management, employee handling, and salary processing. The application features scalable RESTful APIs, efficient state management with TanStack Query, and a responsive UI built with Material UI. It includes dynamic dashboards and role-based workflows, enabling organizations to manage operations seamlessly and efficiently.",
+    image: PrjAiSetu, // make sure you import this image
+    tags: [
+      "React JS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Material UI",
+      "TanStack Query",
+    ],
+    github: null, // or add repo if available
+    webapp: "https://ai-setu.com/", // add live link if deployed
+  },
+  {
+    id: 1,
     title: "Bharat Exam Fest (LIVE Project)",
     description:
       "Bharat Exam Fest is a live UPSC-focused educational platform built with React.js and TypeScript, designed to sell premium courses and host competitive contests. The application allows users to explore and purchase courses, participate in skill-based contests, and win real cash rewards through secure Razorpay payment integration. It features real-time data handling with RTK Query, role-based workflows, and a responsive, modern UI built using Tailwind CSS, Ant Design, and Material UI for a seamless learning and competition experience.",
@@ -187,9 +215,27 @@ export const projects = [
     github: null,
     webapp: "https://www.bharatexamfest.com/",
   },
-
   {
-    id: 1,
+    id: 7, 
+    title: "HK DigiSkill (LIVE Project)",
+    description:
+      "HK DigiSkill is a full-stack skill-based learning platform built using the MERN stack, designed to deliver structured courses and certification programs. The application includes course management, user progress tracking, and dynamic dashboards for personalized learning experiences. It features role-based authentication for admins, instructors, and learners, along with scalable RESTful APIs and strong validation. Frontend performance is optimized using lazy loading, reusable component architecture, and efficient data fetching with TanStack Query for enhanced scalability and responsiveness.",
+    image: PrjHkDigiSkill, // import this image
+    tags: [
+      "React JS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "TanStack Query",
+      "Tailwind CSS",
+      "Ant Design",
+      "Formik"
+    ],
+    github: null, // add if available
+    webapp: "https://hkdigiskill.com/", // add live URL if deployed
+  },
+  {
+    id: 2,
     title: "HRMS Panel (LIVE Project)",
     description:
       "A live, enterprise-level Human Resource Management System built with React.js and TypeScript to manage employees, attendance, and leave operations. The application features role-based access control, real-time data handling using RTK Query, and a responsive, professional dashboard designed with Tailwind CSS and Ant Design for scalable and efficient HR workflows.",
@@ -206,7 +252,7 @@ export const projects = [
     webapp: "https://hrms.hkdigiverse.com/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Casual Vibe",
     description:
       "CasualVibe is a full-stack e-commerce site built with the MERN stack and styled using Tailwind CSS. It features product listings, cart, orders, and admin controls (ADMIN PANEL). Key features include SwiperJS sliders, Framer Motion animations, and TanStack Query for efficient data fetching. The backend uses Zod for validation, Multer for file uploads, Bcrypt for password hashing, and JWT for secure authentication.",
@@ -223,7 +269,7 @@ export const projects = [
     webapp: null,
   },
   {
-    id: 3,
+    id: 4,
     title: "Shakil-Gaha-Portfolio",
     description:
       "A sleek and responsive personal portfolio built using React.js and Tailwind CSS, showcasing a developer’s profile in an elegant and modern layout. The application features dedicated sections for About, Experience, Projects, Skills, and Education, offering a clear and engaging overview of professional background and capabilities. Integrated with EmailJS for seamless contact form functionality, enhanced with dynamic typing effects using Typewriter, and real-time feedback with Toastify notifications, this portfolio ensures both interactivity and a polished user experience. Designed to leave a strong impression on visitors, clients, and recruiters alike.",
@@ -233,7 +279,7 @@ export const projects = [
     webapp: "https://shakilgaha-portfolio.netlify.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Expense-Tracker",
     description:
       "An interactive and visually engaging Expense Tracker application built with React.js and Tailwind CSS, designed to help users manage their finances effortlessly. It features dynamic data visualization through Recharts, providing clear insights into income and expenses. Smooth navigation is handled with React Router DOM, while Framer Motion adds fluid animations for a modern UI feel. Real-time feedback and alerts are powered by React Hot Toast, enhancing user interaction. With intuitive controls and a clean layout, this tool offers a seamless experience for anyone looking to track and analyze their spending habits effectively.",
@@ -249,7 +295,7 @@ export const projects = [
     webapp: "https://shakilgaha-expense-tracker.netlify.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "World-Atlas",
     description:
       "A modern and informative World Atlas web application developed using React.js and Tailwind CSS, designed to explore countries and their detailed information in an interactive format. The app fetches real-time data for all countries via Axios and displays key details such as name, capital, population, region, and flags. Users can click on any country to navigate to a dedicated page showcasing comprehensive data about the selected nation, thanks to seamless routing handled by React Router DOM. With a clean UI and responsive design, the World Atlas offers an intuitive way to learn about countries across the globe.",
